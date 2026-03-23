@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MST Packers Movers | Premium Relocation Services</title>
+    <meta name="description" content="MST Packers Movers - Trusted premium packers and movers for safe, reliable house shifting, office relocation, and vehicle transport across India." />
+    <!-- Modern Geometric Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+        :root {
+            /* Premium Dark Theme Palette */
+            --bg-base: #060913;
+            --bg-surface: #0f1528;
+            --bg-glass: rgba(15, 21, 40, 0.6);
+            --border-glass: rgba(255, 255, 255, 0.08);
+            
+            --accent-primary: #ff5e00;
+            --accent-gradient: linear-gradient(135deg, #ff5e00 0%, #ff9500 100%);
+            --accent-glow: rgba(255, 94, 0, 0.25);
+            
+            --text-primary: #ffffff;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            
+            /* Transitions */
+            --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-base);
+            color: var(--text-primary);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4, h5, h6, .brand-font {
+            font-family: 'Outfit', sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Ambient Glow Background */
+        .ambient-light {
+            position: fixed;
+            top: 10%;
+            left: 50%;
+            width: 800px;
+            height: 800px;
+            transform: translateX(-50%);
+            background: radial-gradient(circle, var(--accent-glow) 0%, transparent 60%);
+            z-index: -1;
+            pointer-events: none;
+            filter: blur(60px);
+            opacity: 0.6;
+        }
+
+        /* Glass Navbar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: var(--bg-glass);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border-glass);
+            padding: 1rem 0;
+            transition: var(--transition-smooth);
+        }
+
+        .navbar.scrolled {
+            padding: 0.75rem 0;
+            background: rgba(6, 9, 19, 0.85);
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .nav-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            group: hover;
+        }
+
+        .logo-icon {
+            width: 42px;
+            height: 42px;
+            background: var(--accent-gradient);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            box-shadow: 0 0 20px var(--accent-glow);
+        }
+
+        .logo-text h2 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            line-height: 1.1;
+        }
+
+        .logo-text span {
+            font-size: 0.65rem;
+            color: var(--accent-primary);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            transition: var(--transition-smooth);
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background: var(--accent-gradient);
+            transition: var(--transition-smooth);
+            border-radius: 2px;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: var(--text-primary);
+        }
+
+        .nav-link.active::after, .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 0.8rem 1.75rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: var(--transition-smooth);
+            cursor: pointer;
+            border: none;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .btn-primary {
+            background: var(--accent-gradient);
+            color: white;
+            box-shadow: 0 4px 15px var(--accent-glow);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px var(--accent-glow);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--text-primary);
+            border: 1px solid var(--border-glass);
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--accent-primary);
+            background: rgba(255, 94, 0, 0.05);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.8rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            padding: 180px 0 100px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-glass);
+            border-radius: 50px;
+            font-size: 0.85rem;
+            color: var(--accent-primary);
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+            animation: badgeFloat 3s ease-in-out infinite alternate;
+        }
+
+        .hero h1 {
+            font-size: clamp(3rem, 5vw, 4.5rem);
+            line-height: 1.1;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            letter-spacing: -1px;
+        }
+
+        .gradient-text {
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            color: var(--text-secondary);
+            margin-bottom: 2.5rem;
+            max-width: 90%;
+            line-height: 1.8;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .hero-visual {
+            position: relative;
+        }
+
+        .hero-image-wrap {
+            position: relative;
+            border-radius: 24px;
+            overflow: hidden;
+            border: 1px solid var(--border-glass);
+            transform: perspective(1000px) rotateY(-10deg) rotateX(5deg);
+            box-shadow: -20px 20px 60px rgba(0,0,0,0.5), 0 0 40px var(--accent-glow);
+            transition: var(--transition-smooth);
+        }
+
+        .hero-image-wrap:hover {
+            transform: perspective(1000px) rotateY(-5deg) rotateX(2deg);
+        }
+
+        .hero-image-wrap img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            aspect-ratio: 4/5;
+        }
+
+        .floating-card {
+            position: absolute;
+            background: rgba(15, 21, 40, 0.8);
+            backdrop-filter: blur(16px);
+            border: 1px solid var(--border-glass);
+            padding: 1.25rem;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            z-index: 2;
+        }
+
+        .fc-1 {
+            bottom: -20px;
+            left: -40px;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .fc-2 {
+            top: 40px;
+            right: -30px;
+            animation: float 5s ease-in-out infinite reverse;
+        }
+
+        .fc-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 94, 0, 0.1);
+            color: var(--accent-primary);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+        }
+
+        @keyframes badgeFloat {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-5px); }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+
+        /* Stats Section */
+        .stats {
+            padding: 4rem 0;
+            border-top: 1px solid var(--border-glass);
+            border-bottom: 1px solid var(--border-glass);
+            background: rgba(255,255,255,0.01);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .stat-item h3 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(to bottom, #fff, #94a3b8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .stat-item p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Section Headers */
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        
+        .section-header span {
+            color: var(--accent-primary);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.85rem;
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+        .section-header h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 700;
+        }
+
+        /* Services Grid */
+        .services {
+            padding: 8rem 0;
+            position: relative;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-glass);
+            padding: 2.5rem;
+            border-radius: 20px;
+            transition: var(--transition-smooth);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: radial-gradient(circle at top right, rgba(255, 94, 0, 0.1), transparent 50%);
+            opacity: 0;
+            transition: var(--transition-smooth);
+            z-index: -1;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(255, 94, 0, 0.3);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+        }
+
+        .service-card:hover::before {
+            opacity: 1;
+        }
+
+        .svc-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 14px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-glass);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: var(--accent-primary);
+            margin-bottom: 1.5rem;
+            transition: var(--transition-smooth);
+        }
+
+        .service-card:hover .svc-icon {
+            background: var(--accent-gradient);
+            color: white;
+            border-color: transparent;
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .service-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 8rem 0;
+            background: linear-gradient(to bottom, var(--bg-base), var(--bg-surface));
+        }
+
+        .testi-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .testi-card {
+            background: rgba(255,255,255,0.02);
+            border: 1px solid var(--border-glass);
+            border-radius: 20px;
+            padding: 2.5rem;
+            position: relative;
+        }
+
+        .testi-quote {
+            color: var(--accent-primary);
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            opacity: 0.5;
+        }
+
+        .testi-card p {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+
+        .client-info {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .client-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--border-glass);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: white;
+        }
+
+        .client-details h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .client-details span {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: 8rem 0;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            border: 1px solid var(--border-glass);
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            background: rgba(255,255,255,0.01);
+            overflow: hidden;
+        }
+
+        .faq-q {
+            padding: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: var(--transition-smooth);
+        }
+
+        .faq-q:hover {
+            background: rgba(255,255,255,0.03);
+        }
+
+        .faq-q i {
+            transition: transform 0.3s;
+            color: var(--accent-primary);
+        }
+
+        .faq-item.open .faq-q i {
+            transform: rotate(180deg);
+        }
+
+        .faq-a {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: var(--transition-smooth);
+            color: var(--text-secondary);
+        }
+
+        .faq-item.open .faq-a {
+            padding: 0 1.5rem 1.5rem;
+            max-height: 300px; /* arbitrary max height for animation */
+        }
+
+        /* CTA & Footer */
+        .cta-section {
+            padding: 6rem 0;
+        }
+
+        .cta-box {
+            background: linear-gradient(135deg, var(--bg-surface) 0%, #1a1727 100%);
+            border: 1px solid var(--border-glass);
+            border-radius: 30px;
+            padding: 5rem 3rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-box::before {
+            content: '';
+            position: absolute;
+            top: -50%; left: -50%; width: 200%; height: 200%;
+            background: radial-gradient(circle, rgba(255, 94, 0, 0.1) 0%, transparent 60%);
+            pointer-events: none;
+        }
+
+        .cta-box h2 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-box p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 2.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        footer {
+            border-top: 1px solid var(--border-glass);
+            padding: 4rem 0 2rem;
+            background: #02040a;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 4rem;
+            margin-bottom: 4rem;
+        }
+
+        .footer-logo {
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-about p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-gst {
+            font-family: monospace;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        .footer-gst span {
+            color: var(--accent-primary);
+        }
+
+        .footer-heading {
+            color: white;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            transition: var(--transition-smooth);
+            font-size: 0.95rem;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-primary);
+        }
+
+        .contact-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+
+        .contact-list i {
+            color: var(--accent-primary);
+            font-size: 1.2rem;
+            margin-top: 2px;
+        }
+
+        .footer-bottom {
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-glass);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        /* Animation Classes */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero-grid { grid-template-columns: 1fr; text-align: center; }
+            .hero-actions { justify-content: center; }
+            .hero-image-wrap { transform: none !important; max-width: 600px; margin: 0 auto; }
+            .fc-1, .fc-2 { display: none; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 3rem; }
+            .footer-grid { grid-template-columns: 1fr 1fr; gap: 3rem; }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed; top: 70px; left: 0; right: 0; background: var(--bg-surface);
+                flex-direction: column; padding: 2rem; border-bottom: 1px solid var(--border-glass);
+                clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); transition: var(--transition-smooth);
+            }
+            .nav-links.show { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+            .mobile-menu-btn { display: block; }
+            .get-quote-btn { width: 100%; justify-content: center; margin-top: 1rem; }
+            .hero h1 { font-size: 2.5rem; }
+            .testi-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; }
+            .cta-box { padding: 3rem 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Ambient Glow -->
+    <div class="ambient-light"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"><i class="ph-bold ph-truck"></i></div>
+                <div class="logo-text">
+                    <h2>MST</h2>
+                    <span>Packers & Movers</span>
+                </div>
+            </a>
+            
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="https://wa.me/919999999999" target="_blank" class="btn btn-primary get-quote-btn">
+                    <i class="ph-bold ph-whatsapp-logo"></i> Get Quote
+                </a>
+            </div>
+
+            <button class="mobile-menu-btn" id="menuBtn">
+                <i class="ph-bold ph-list"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content reveal">
+                <div class="hero-badge">
+                    <i class="ph-fill ph-shield-check"></i> #1 Most Trusted Relocation
+                </div>
+                <h1>Moving your World,<br><span class="gradient-text">Safely & Swiftly.</span></h1>
+                <p>Experience seamless relocation across India with our premium packing and moving services. Zero stress, full insurance, and on-time delivery guaranteed.</p>
+                <div class="hero-actions">
+                    <a href="tel:+919999999999" class="btn btn-primary">
+                        <i class="ph-bold ph-calendar-check"></i> Book Now
+                    </a>
+                    <a href="about.html" class="btn btn-outline">
+                        Discover Our Story <i class="ph-bold ph-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual reveal">
+                <div class="hero-image-wrap">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&q=80" alt="Professional Movers">
+                </div>
+                <!-- Floating Elements -->
+                <div class="floating-card fc-1">
+                    <div class="fc-icon"><i class="ph-bold ph-package"></i></div>
+                    <div>
+                        <div style="font-weight: 700;">100% Safe</div>
+                        <div style="font-size: 0.8rem; color: var(--text-muted)">Premium Packing</div>
+                    </div>
+                </div>
+                <div class="floating-card fc-2">
+                    <div class="fc-icon"><i class="ph-bold ph-map-pin"></i></div>
+                    <div>
+                        <div style="font-weight: 700;">Pan India</div>
+                        <div style="font-size: 0.8rem; color: var(--text-muted)">Delivery Network</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats reveal">
+        <div class="container stats-grid">
+            <div class="stat-item">
+                <h3>10+</h3>
+                <p>Years Experience</p>
+            </div>
+            <div class="stat-item">
+                <h3>5K+</h3>
+                <p>Happy Families</p>
+            </div>
+            <div class="stat-item">
+                <h3>100+</h3>
+                <p>Cities Covered</p>
+            </div>
+            <div class="stat-item">
+                <h3>24/7</h3>
+                <p>Customer Support</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <span>Our Expertise</span>
+                <h2>Comprehensive <span class="gradient-text">Relocation Options</span></h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="svc-icon"><i class="ph-bold ph-box-arrow-down"></i></div>
+                    <h3>Premium Packing</h3>
+                    <p>We use high-grade multi-layer packaging materials like bubble wraps and corrugated sheets to ensure zero damage to your delicate items.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="svc-icon"><i class="ph-bold ph-house-line"></i></div>
+                    <h3>House Shifting</h3>
+                    <p>End-to-end household relocation including careful disassembling, transport, and reassembling at your new destination.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="svc-icon"><i class="ph-bold ph-buildings"></i></div>
+                    <h3>Corporate Relocation</h3>
+                    <p>Minimal downtime office moves executed with immense synchronization, ensuring your business stays operational.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="svc-icon"><i class="ph-bold ph-car-profile"></i></div>
+                    <h3>Vehicle Transport</h3>
+                    <p>Secure car and bike transportation using specially enclosed carrier trucks to prevent scratches during transit.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="svc-icon"><i class="ph-bold ph-shield-check"></i></div>
+                    <h3>Full Insurance</h3>
+                    <p>Comprehensive transit insurance coverage so that you stay completely stress-free about the safety of your valuables.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="svc-icon"><i class="ph-bold ph-clock-countdown"></i></div>
+                    <h3>Express Delivery</h3>
+                    <p>Time is money. Our advanced logistics network ensures that your belongings reach exactly when promised.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header reveal">
+                <span>Client Love</span>
+                <h2>What Our Customers <span class="gradient-text">Say</span></h2>
+            </div>
+            <div class="testi-grid">
+                <div class="testi-card reveal">
+                    <i class="ph-fill ph-quotes testi-quote"></i>
+                    <p>"Moving from Delhi to Bangalore was a breeze with MST. Their packing quality is outstanding and my glassware arrived without a single scratch."</p>
+                    <div class="client-info">
+                        <div class="client-avatar">RK</div>
+                        <div class="client-details">
+                            <h4>Rahul Khanna</h4>
+                            <span>IT Professional</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testi-card reveal">
+                    <i class="ph-fill ph-quotes testi-quote"></i>
+                    <p>"Highly professional team. They moved our entire 50-employee office over the weekend. We were up and running on Monday morning seamlessly."</p>
+                    <div class="client-info">
+                        <div class="client-avatar">SM</div>
+                        <div class="client-details">
+                            <h4>Sneha Malhotra</h4>
+                            <span>Operations Manager</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testi-card reveal">
+                    <i class="ph-fill ph-quotes testi-quote"></i>
+                    <p>"Transported my Royal Enfield and sedan. The enclosed carriers they use are absolute top-tier. Highly recommended for vehicle transport!"</p>
+                    <div class="client-info">
+                        <div class="client-avatar">AD</div>
+                        <div class="client-details">
+                            <h4>Arun Desai</h4>
+                            <span>Business Owner</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header reveal">
+                <span>Got Questions?</span>
+                <h2>Frequently Asked <span class="gradient-text">Questions</span></h2>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item reveal">
+                    <div class="faq-q">How much time does packing take? <i class="ph-bold ph-caret-down"></i></div>
+                    <div class="faq-a">For a standard 2BHK, it usually takes our team of 4 professionals about 4-6 hours to dismantle, pack, and properly inventory all items.</div>
+                </div>
+                <div class="faq-item reveal">
+                    <div class="faq-q">Do you provide transit insurance? <i class="ph-bold ph-caret-down"></i></div>
+                    <div class="faq-a">Yes! We provide comprehensive transit insurance for all your belongings. In the rare scenario of damage, you are fully covered based on declared value.</div>
+                </div>
+                <div class="faq-item reveal">
+                    <div class="faq-q">Are there any hidden costs? <i class="ph-bold ph-caret-down"></i></div>
+                    <div class="faq-a">Absolutely not. We pride ourselves on 100% transparent pricing. The quote provided after our pre-move survey is final, inclusive of all taxes and tolls.</div>
+                </div>
+                <div class="faq-item reveal">
+                    <div class="faq-q">Do you unpack belongings at the destination? <i class="ph-bold ph-caret-down"></i></div>
+                    <div class="faq-a">Yes, our door-to-door service includes unpacking heavy furniture and placing them as per your instruction, along with removing debris.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container reveal">
+            <div class="cta-box">
+                <h2>Ready for a <span class="gradient-text">Smooth Move?</span></h2>
+                <p>Join thousands of satisfied families and businesses. Let us handle the heavy lifting while you focus on your new beginning.</p>
+                <a href="tel:+919999999999" class="btn btn-primary" style="padding: 1rem 2.5rem; font-size: 1.1rem;">
+                    <i class="ph-bold ph-phone-call"></i> Call for Free Estimate
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="logo footer-logo">
+                        <div class="logo-icon" style="width: 32px; height: 32px; font-size: 1rem;"><i class="ph-bold ph-truck"></i></div>
+                        <div class="logo-text">
+                            <h2 style="font-size: 1.2rem;">MST</h2>
+                            <span style="font-size: 0.5rem;">Packers & Movers</span>
+                        </div>
+                    </div>
+                    <p>Your premium, trusted partner for safe, reliable, and affordable packing and moving logistics across India.</p>
+                    <div class="footer-gst">GST No: <span>07XXXXX1234X1Z5</span></div>
+                </div>
+                
+                <div>
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="footer-heading">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="insurance-policy.html">Insurance Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <ul class="contact-list" style="list-style: none;">
+                        <li>
+                            <i class="ph-bold ph-phone"></i>
+                            <div>
+                                <a href="tel:+919999999999">+91 99999 99999</a><br>
+                                <span style="font-size: 0.8rem; color: var(--text-muted)">24/7 Support line</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="ph-bold ph-whatsapp-logo"></i>
+                            <div>
+                                <a href="https://wa.me/919999999999">+91 99999 99999</a><br>
+                                <span style="font-size: 0.8rem; color: var(--text-muted)">WhatsApp Support</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="ph-bold ph-envelope-simple"></i>
+                            <a href="mailto:info@mstpackersmovers.com">info@mstpackersmovers.com</a>
+                        </li>
+                        <li>
+                            <i class="ph-bold ph-map-pin"></i>
+                            <span>Premium Logistics Hub, New Delhi, India 110001</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                &copy; 2026 Maa Shanti Transport Packers & Movers. All rights reserved. Designed with precision.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        // Navbar Scrolled Effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const navLinks = document.getElementById('navLinks');
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+            const icon = menuBtn.querySelector('i');
+            if(navLinks.classList.contains('show')) {
+                icon.classList.remove('ph-list');
+                icon.classList.add('ph-x');
+            } else {
+                icon.classList.remove('ph-x');
+                icon.classList.add('ph-list');
+            }
+        });
+
+        // FAQ Accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const q = item.querySelector('.faq-q');
+            q.addEventListener('click', () => {
+                const isActive = item.classList.contains('open');
+                // Close all
+                faqItems.forEach(i => i.classList.remove('open'));
+                // Open clicked if it wasn't active
+                if (!isActive) {
+                    item.classList.add('open');
+                }
+            });
+        });
+
+        // Scroll Reveal Animation Set up
+        const revealElements = document.querySelectorAll('.reveal');
+        
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            rootMargin: '0px 0px -50px 0px',
+            threshold: 0.1
+        });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+    </script>
+</body>
+</html>
